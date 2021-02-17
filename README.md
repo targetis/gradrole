@@ -17,8 +17,9 @@ The application has a concept of users and HTTP Session Authentication so there 
 5.  Create a local clone of your fork
 6.  Create a new role and database in PostgreSQL called `gradrole`
 7.  Run your Spring Boot application using `./mvnw`
-8.  In a separate terminal window start the frontend applications using `npm start`
-9.  Finally we recommend opening the project in an IDE such as [IntelliJIDEA](https://www.jetbrains.com/idea/) - this [guide](https://www.jhipster.tech/configuring-ide-idea/#-configuring-intellij-idea) will help you configure it
+8.  In a separate terminal window install the required depedencies for the frontend applications using `npm i` 
+9.  Start the frontend application using `npm start`
+10.  Finally we recommend opening the project in an IDE such as [IntelliJIDEA](https://www.jetbrains.com/idea/) - this [guide](https://www.jhipster.tech/configuring-ide-idea/#-configuring-intellij-idea) will help you configure it
 
 If you are using Intellij IDEA then we recommend that you enable "hot-restart" with [Spring Boot devtools](https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot-devtools). This is a must-have feature, as it makes your application updated on the fly as and when you make changes.
 
