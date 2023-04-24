@@ -9,8 +9,11 @@ Welcome to **GradRole** our exciting new app. We have used [JHipster](https://ww
 The application has a concept of users and HTTP Session Authentication so there is a secure area of the site you can log into. If and when you get the app up and running on your local machine you will see that quite a bit of work has already been done for you but we need your help to add in few new changes.
 
 # Quick Start
+**You will need to be running Java version v12, Node v14 and PostgreSQL v9. Other versions may work but if you are getting errors check your versions match.**
 
-1.  Install [Java](https://adoptopenjdk.net/), [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/).
+*Installing and launching the application can be quite challenging, but don't lose heart. Consider taking note of any difficulties you encounter and the solutions you come up with. Sharing your experience in overcoming these obstacles can be valuable and interesting for us to hear.*
+
+1.  Install [Java](https://adoptopenjdk.net/), [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/) and [PostgreSQL](https://www.postgresql.org/).
 2.  Install [JHipster](https://www.jhipster.tech/) `npm install -g generator-jhipster@beta` (we are using the beta because it supports Vue.js out of the box)
 3.  Create a [GitHub](https://github.com/) account if you don't already have one
 4.  [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the application
