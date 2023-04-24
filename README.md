@@ -33,6 +33,8 @@ Now lets get to work!
 
 # New Requirements
 
+Before this part it might be work reading through some of the JHipster docs such as JHipster in a few minues and JHipster core tasks and JHipster in development. Here are some links which may come in handy but you may have to find some answers yourself - https://www.jhipster.tech/video-tutorial/, https://www.jhipster.tech/creating-an-entity/, https://www.jhipster.tech/development/, https://www.jhipster.tech/development/#database-updates.
+
 The client has requested a few changes to this application. Have a go at implementing the following requirements:
 
 - First of all the client really doesn't like the "Welcome, Java Hipster!" can we change this to something more fitting?
