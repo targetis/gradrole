@@ -1,0 +1,27 @@
+{
+  "gradroleApp": {
+    "student": {
+      "home": {
+        "title": "Students",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Student erstellen",
+        "createOrEditLabel": "Student erstellen oder bearbeiten",
+        "notFound": "No Students found"
+      },
+      "created": "Student erstellt mit ID {{ param }}",
+      "updated": "Student aktualisiert mit ID {{ param }}",
+      "deleted": "Student gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Student {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Student"
+      },
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "dob": "Dob",
+      "course": "Course"
+    }
+  }
+}
