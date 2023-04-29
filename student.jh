@@ -1,0 +1,7 @@
+
+entity Student {
+	name String,
+	email String,
+	dob LocalDate,
+	course String
+}
