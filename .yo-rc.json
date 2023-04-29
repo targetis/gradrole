@@ -45,6 +45,8 @@
     "rememberMeKey": "657db997fc816bf2d314872a02a8210f3cafd35a9d1fe60ab0b7169354326752ad0956b39306d778437c0e05165780fa9531",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en", "fr", "de"]
+    "languages": ["en", "fr", "de"],
+    "entities": ["Student"],
+    "lastLiquibaseTimestamp": 1682747852000
   }
 }

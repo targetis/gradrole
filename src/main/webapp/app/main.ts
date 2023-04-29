@@ -27,6 +27,7 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
+import StudentService from '@/entities/student/student.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -85,6 +86,7 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
+    studentService: () => new StudentService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },
