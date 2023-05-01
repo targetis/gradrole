@@ -46,7 +46,7 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["en", "fr", "de"],
-    "entities": ["Student"],
-    "lastLiquibaseTimestamp": 1682747852000
+    "entities": ["Student", "UserExt"],
+    "lastLiquibaseTimestamp": 1682898643000
   }
 }

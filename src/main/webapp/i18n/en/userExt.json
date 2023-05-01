@@ -1,0 +1,27 @@
+{
+  "gradroleApp": {
+    "userExt": {
+      "home": {
+        "title": "User Exts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Ext",
+        "createOrEditLabel": "Create or edit a User Ext",
+        "notFound": "No User Exts found"
+      },
+      "created": "A new User Ext is created with identifier {{ param }}",
+      "updated": "A User Ext is updated with identifier {{ param }}",
+      "deleted": "A User Ext is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Ext {{ id }}?"
+      },
+      "detail": {
+        "title": "User Ext"
+      },
+      "id": "ID",
+      "middleName": "Middle Name",
+      "jobRole": "Job Role",
+      "dateOfBirth": "Date Of Birth",
+      "user": "User"
+    }
+  }
+}
