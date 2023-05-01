@@ -50,6 +50,8 @@ public class CacheConfiguration {
             createCache(cm, com.targetis.gradrole.domain.User.class.getName() + ".authorities");
             createCache(cm, com.targetis.gradrole.domain.PersistentToken.class.getName());
             createCache(cm, com.targetis.gradrole.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, com.targetis.gradrole.domain.Student.class.getName());
+            createCache(cm, com.targetis.gradrole.domain.UserExt.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

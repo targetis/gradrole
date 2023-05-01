@@ -1,0 +1,31 @@
+{
+  "fields": [
+    {
+      "fieldName": "middleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobRole",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "user",
+      "otherEntityName": "user",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "login",
+      "ownerSide": true,
+      "useJPADerivedIdentifier": true,
+      "otherEntityRelationshipName": "userExt"
+    }
+  ],
+  "readOnly": false,
+  "pagination": "no",
+  "name": "UserExt",
+  "changelogDate": "20230430235043"
+}
