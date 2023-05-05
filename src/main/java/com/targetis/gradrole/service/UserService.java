@@ -132,7 +132,10 @@ public class UserService {
         // new user gets initially a generated password
         newUser.setPassword(encryptedPassword);
         newUser.setFirstName(userDTO.getFirstName());
+        newUser.setMiddleName(userDTO.getMiddleName());
         newUser.setLastName(userDTO.getLastName());
+        newUser.setJobRole(userDTO.getJobRole());
+        newUser.setDateOfBirth(userDTO.getDateOfBirth());
         if (userDTO.getEmail() != null) {
             newUser.setEmail(userDTO.getEmail().toLowerCase());
         }
@@ -165,7 +168,10 @@ public class UserService {
         User user = new User();
         user.setLogin(userDTO.getLogin().toLowerCase());
         user.setFirstName(userDTO.getFirstName());
+        user.setMiddleName(userDTO.getMiddleName());
         user.setLastName(userDTO.getLastName());
+        user.setJobRole(userDTO.getJobRole());
+        user.setDateOfBirth(userDTO.getDateOfBirth());
         if (userDTO.getEmail() != null) {
             user.setEmail(userDTO.getEmail().toLowerCase());
         }
@@ -212,7 +218,10 @@ public class UserService {
                     this.clearUserCaches(user);
                     user.setLogin(userDTO.getLogin().toLowerCase());
                     user.setFirstName(userDTO.getFirstName());
+                    user.setMiddleName(userDTO.getMiddleName());
                     user.setLastName(userDTO.getLastName());
+                    user.setJobRole(userDTO.getJobRole());
+                    user.setDateOfBirth(userDTO.getDateOfBirth());
                     if (userDTO.getEmail() != null) {
                         user.setEmail(userDTO.getEmail().toLowerCase());
                     }
@@ -257,14 +266,26 @@ public class UserService {
      * @param langKey   language key.
      * @param imageUrl  image URL of user.
      */
-    public void updateUser(String firstName, String lastName, String email, String langKey, String imageUrl) {
+    public void updateUser(
+        String firstName,
+        String middleName,
+        String lastName,
+        String jobRole,
+        LocalDate dateOfBirth,
+        String email,
+        String langKey,
+        String imageUrl
+    ) {
         SecurityUtils
             .getCurrentUserLogin()
             .flatMap(userRepository::findOneByLogin)
             .ifPresent(
                 user -> {
                     user.setFirstName(firstName);
+                    user.setMiddleName(middleName);
                     user.setLastName(lastName);
+                    user.setJobRole(jobRole);
+                    user.setDateOfBirth(dateOfBirth);
                     if (email != null) {
                         user.setEmail(email.toLowerCase());
                     }

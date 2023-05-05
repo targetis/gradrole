@@ -48,7 +48,10 @@ public class UserMapper {
             user.setId(userDTO.getId());
             user.setLogin(userDTO.getLogin());
             user.setFirstName(userDTO.getFirstName());
+            user.setMiddleName(userDTO.getMiddleName());
             user.setLastName(userDTO.getLastName());
+            user.setJobRole(userDTO.getJobRole());
+            user.setDateOfBirth(userDTO.getDateOfBirth());
             user.setEmail(userDTO.getEmail());
             user.setImageUrl(userDTO.getImageUrl());
             user.setActivated(userDTO.isActivated());
@@ -103,7 +106,7 @@ public class UserMapper {
     @Named("idSet")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
-    public Set<UserDTO> toDtoIdSet(Set<User> users) {
+    public Set<UserDTO> toDtoidSet(Set<User> users) {
         if (users == null) {
             return null;
         }
@@ -134,7 +137,7 @@ public class UserMapper {
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
     @Mapping(target = "login", source = "login")
-    public Set<UserDTO> toDtoLoginSet(Set<User> users) {
+    public Set<UserDTO> toDtologinSet(Set<User> users) {
         if (users == null) {
             return null;
         }

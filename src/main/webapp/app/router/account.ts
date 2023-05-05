@@ -19,6 +19,7 @@ export default [
     name: 'Activate',
     component: Activate,
   },
+
   {
     path: '/account/reset/request',
     name: 'ResetPasswordInit',
@@ -33,18 +34,15 @@ export default [
     path: '/account/password',
     name: 'ChangePassword',
     component: ChangePassword,
-    meta: { authorities: [Authority.USER] },
   },
   {
     path: '/account/sessions',
     name: 'Sessions',
     component: Sessions,
-    meta: { authorities: [Authority.USER] },
   },
   {
     path: '/account/settings',
     name: 'Settings',
     component: Settings,
-    meta: { authorities: [Authority.USER] },
   },
 ];

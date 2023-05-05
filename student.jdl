@@ -1,0 +1,10 @@
+
+entity Student{
+	id Long
+    name String
+    email String
+    Dob LocalDate
+    Course String    
+}
+
+dto * with mapstruct

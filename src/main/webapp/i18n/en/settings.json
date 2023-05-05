@@ -4,8 +4,14 @@
     "form": {
       "firstname": "First Name",
       "firstname.placeholder": "Your first name",
+      "middlename": "Middle Name",
+      "middlename.placeholder": "Your middle name",
       "lastname": "Last Name",
       "lastname.placeholder": "Your last name",
+      "jobrole": "Job Role",
+      "jobrole.placeholder": "Your job role",
+      "dateOfBirth": "Date of Birth",
+      "dateOfBirth.placeholder": "Date of Birth",
       "language": "Language",
       "button": "Save"
     },
@@ -24,7 +30,11 @@
         "lastname": {
           "required": "Your last name is required.",
           "minlength": "Your last name is required to be at least 1 character",
-          "maxlength": "Your last name cannot be longer than 50 characters"
+          "maxlength": "Your last name cannot be longer than 50 characters",
+
+          "dOfbirth": {
+            "required": "Your DOB is required."
+          }
         }
       }
     }

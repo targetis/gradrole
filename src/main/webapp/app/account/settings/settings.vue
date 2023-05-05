@@ -57,6 +57,39 @@
               </small>
             </div>
           </div>
+
+          <div class="form-group">
+            <label class="form-control-label" for="middleName" v-text="$t('settings.form.middlename')">middle Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="middleName"
+              name="middleName"
+              v-bind:placeholder="$t('settings.form[\'middlename.placeholder\']')"
+              :class="{ valid: !$v.settingsAccount.middleName.$invalid, invalid: $v.settingsAccount.middleName.$invalid }"
+              v-model="$v.settingsAccount.middleName.$model"
+              minlength="1"
+              maxlength="50"
+              required
+              data-cy="middlename"
+            />
+            <div v-if="$v.settingsAccount.middleName.$anyDirty && $v.settingsAccount.middleName.$invalid">
+              <small
+                class="form-text text-danger"
+                v-if="!$v.settingsAccount.middleName.minLength"
+                v-text="$t('settings.messages.validate.middlename.minlength')"
+              >
+                Your middle name is required to be at least 1 character.
+              </small>
+              <small
+                class="form-text text-danger"
+                v-if="!$v.settingsAccount.middleName.maxLength"
+                v-text="$t('settings.messages.validate.middlename.maxlength')"
+              >
+                Your middle name cannot be longer than 50 characters.
+              </small>
+            </div>
+          </div>
           <div class="form-group">
             <label class="form-control-label" for="lastName" v-text="$t('settings.form.lastname')">Last Name</label>
             <input
@@ -96,6 +129,64 @@
               </small>
             </div>
           </div>
+
+          <div class="form-group">
+            <label class="form-control-label" for="jobRole" v-text="$t('settings.form.jobrole')">Job Role</label>
+            <input
+              type="text"
+              class="form-control"
+              id="jobRole"
+              name="jobRole"
+              v-bind:placeholder="$t('settings.form[\'jobrole.placeholder\']')"
+              :class="{ valid: !$v.settingsAccount.jobRole.$invalid, invalid: $v.settingsAccount.jobRole.$invalid }"
+              v-model="$v.settingsAccount.jobRole.$model"
+              minlength="1"
+              maxlength="50"
+              required
+              data-cy="jobrole"
+            />
+
+            <div v-if="$v.settingsAccount.jobRole.$anyDirty && $v.settingsAccount.jobRole.$invalid">
+              <small
+                class="form-text text-danger"
+                v-if="!$v.settingsAccount.jobRole.minLength"
+                v-text="$t('settings.messages.validate.jobrole.minlength')"
+              >
+                Your job role is required to be at least 1 character.
+              </small>
+              <small
+                class="form-text text-danger"
+                v-if="!$v.settingsAccount.jobRole.maxLength"
+                v-text="$t('settings.messages.validate.jobrole.maxlength')"
+              >
+                Your job role cannot be longer than 50 characters.
+              </small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-control-label" for="dateOfBirth" v-text="$t('settings.form.dateOfBirth')">Date of Birth</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dateOfBirth"
+              name="dateOfBirth"
+              v-bind:placeholder="$t('settings.form[\'dateOfBirth.placeholder\']')"
+              :class="{ valid: !$v.settingsAccount.dateOfBirth.$invalid, invalid: $v.settingsAccount.dateOfBirth.$invalid }"
+              v-model="$v.settingsAccount.dateOfBirth.$model"
+              data-cy="dateOfBirth"
+            />
+            <div v-if="$v.settingsAccount.dateOfBirth.$anyDirty && $v.settingsAccount.dateOfBirth.$invalid">
+              <small
+                class="form-text text-danger"
+                v-if="!$v.settingsAccount.dateOfBirth.required"
+                v-text="$t('settings.messages.validate.dateOfBirth.required')"
+              >
+                Your DOB required.
+              </small>
+            </div>
+          </div>
+
           <div class="form-group">
             <label class="form-control-label" for="email" v-text="$t('global.form[\'email.label\']')">Email</label>
             <input
