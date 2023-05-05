@@ -11,6 +11,5 @@ export default [
     path: '/entities/students',
     name: 'Students',
     component: Students,
-    meta: { authorities: [Authority.USER] },
   },
 ];
