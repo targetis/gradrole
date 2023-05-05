@@ -10,11 +10,23 @@ const validations = {
       minLength: minLength(1),
       maxLength: maxLength(50),
     },
+    middleName: {
+      minLength: minLength(1),
+      maxLength: maxLength(50),
+    },
     lastName: {
       required,
       minLength: minLength(1),
       maxLength: maxLength(50),
     },
+    jobRole: {
+      minLength: minLength(1),
+      maxLength: maxLength(50),
+    },
+    dateOfBirth: {
+      required,
+    },
+
     email: {
       required,
       email,

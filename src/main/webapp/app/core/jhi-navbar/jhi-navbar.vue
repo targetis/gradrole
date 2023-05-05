@@ -24,13 +24,20 @@
             <span v-text="$t('global.menu.home')">Home</span>
           </span>
         </b-nav-item>
+
         <b-nav-item-dropdown right id="entity-menu" v-if="authenticated" active-class="active" class="pointer" data-cy="entity">
           <span slot="button-content" class="navbar-dropdown-menu">
             <font-awesome-icon icon="th-list" />
             <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>
           </span>
+
+          <b-dropdown-item data-cy="students" to="/entities/students" tag="b-dropdown-item" active-class="active">
+            <font-awesome-icon icon="book" />
+            <span>Student</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
+
         <b-nav-item-dropdown
           right
           id="admin-menu"

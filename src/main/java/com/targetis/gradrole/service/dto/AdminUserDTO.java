@@ -4,8 +4,10 @@ import com.targetis.gradrole.config.Constants;
 import com.targetis.gradrole.domain.Authority;
 import com.targetis.gradrole.domain.User;
 import java.time.Instant;
+import java.time.LocalDate;
 import java.util.Set;
 import java.util.stream.Collectors;
+import javax.persistence.Column;
 import javax.validation.constraints.*;
 
 /**
@@ -24,7 +26,15 @@ public class AdminUserDTO {
     private String firstName;
 
     @Size(max = 50)
+    private String middleName;
+
+    @Size(max = 50)
     private String lastName;
+
+    @Size(max = 50)
+    private String jobRole;
+
+    private LocalDate dateOfBirth;
 
     @Email
     @Size(min = 5, max = 254)
@@ -56,7 +66,10 @@ public class AdminUserDTO {
         this.id = user.getId();
         this.login = user.getLogin();
         this.firstName = user.getFirstName();
+        this.middleName = user.getMiddleName();
         this.lastName = user.getLastName();
+        this.jobRole = user.getJobRole();
+        this.dateOfBirth = user.getDateOfBirth();
         this.email = user.getEmail();
         this.activated = user.isActivated();
         this.imageUrl = user.getImageUrl();
@@ -92,12 +105,36 @@ public class AdminUserDTO {
         this.firstName = firstName;
     }
 
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
     public String getLastName() {
         return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getJobRole() {
+        return jobRole;
+    }
+
+    public void setJobRole(String jobRole) {
+        this.jobRole = jobRole;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate datebirth) {
+        this.dateOfBirth = datebirth;
     }
 
     public String getEmail() {
@@ -178,7 +215,10 @@ public class AdminUserDTO {
         return "AdminUserDTO{" +
             "login='" + login + '\'' +
             ", firstName='" + firstName + '\'' +
+            ", middleName='" + middleName + '\'' +
             ", lastName='" + lastName + '\'' +
+            ", jobRole='" + jobRole + '\'' +
+            ", dateOfBirth='" + dateOfBirth + '\'' +
             ", email='" + email + '\'' +
             ", imageUrl='" + imageUrl + '\'' +
             ", activated=" + activated +

@@ -14,31 +14,26 @@ export default [
     path: '/admin/user-management',
     name: 'JhiUser',
     component: JhiUserManagementComponent,
-    meta: { authorities: [Authority.ADMIN] },
   },
   {
     path: '/admin/user-management/new',
     name: 'JhiUserCreate',
     component: JhiUserManagementEditComponent,
-    meta: { authorities: [Authority.ADMIN] },
   },
   {
     path: '/admin/user-management/:userId/edit',
     name: 'JhiUserEdit',
     component: JhiUserManagementEditComponent,
-    meta: { authorities: [Authority.ADMIN] },
   },
   {
     path: '/admin/user-management/:userId/view',
     name: 'JhiUserView',
     component: JhiUserManagementViewComponent,
-    meta: { authorities: [Authority.ADMIN] },
   },
   {
     path: '/admin/docs',
     name: 'JhiDocsComponent',
     component: JhiDocsComponent,
-    meta: { authorities: [Authority.ADMIN] },
   },
   {
     path: '/admin/health',
@@ -62,6 +57,5 @@ export default [
     path: '/admin/configuration',
     name: 'JhiConfigurationComponent',
     component: JhiConfigurationComponent,
-    meta: { authorities: [Authority.ADMIN] },
   },
 ];

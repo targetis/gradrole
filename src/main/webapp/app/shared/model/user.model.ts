@@ -2,7 +2,10 @@ export interface IUser {
   id?: any;
   login?: string;
   firstName?: string;
+  middleName?: string;
   lastName?: string;
+  jobRole?: string;
+  dateOfBirth?: Date;
   email?: string;
   activated?: boolean;
   langKey?: string;
@@ -19,7 +22,10 @@ export class User implements IUser {
     public id?: any,
     public login?: string,
     public firstName?: string,
+    public middleName?: string,
     public lastName?: string,
+    public jobRole?: string,
+    public dateOfBirth?: Date,
     public email?: string,
     public activated?: boolean,
     public langKey?: string,

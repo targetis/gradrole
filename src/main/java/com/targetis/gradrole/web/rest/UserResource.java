@@ -61,7 +61,7 @@ import tech.jhipster.web.util.ResponseUtil;
 public class UserResource {
 
     private static final List<String> ALLOWED_ORDERED_PROPERTIES = Collections.unmodifiableList(
-        Arrays.asList("id", "login", "firstName", "lastName", "email", "activated", "langKey")
+        Arrays.asList("id", "login", "firstName", "MiddleName", "lastName", "JobRole", "dateOfBirth", "email", "activated", "langKey")
     );
 
     private final Logger log = LoggerFactory.getLogger(UserResource.class);

@@ -38,9 +38,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/gradrole
+    url: jdbc:postgresql://localhost:5433/gradrole
     username: gradrole
-    password:
+    password: test
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -104,3 +104,4 @@ jhipster:
 # ===================================================================
 
 # application:
+

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.targetis.gradrole.config.Constants;
 import java.io.Serializable;
 import java.time.Instant;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
@@ -49,8 +50,19 @@ public class User extends AbstractAuditingEntity implements Serializable {
     private String firstName;
 
     @Size(max = 50)
+    @Column(name = "middle_name", length = 50)
+    private String middleName;
+
+    @Size(max = 50)
     @Column(name = "last_name", length = 50)
     private String lastName;
+
+    @Size(max = 50)
+    @Column(name = "job_role", length = 50)
+    private String jobRole;
+
+    @Column(name = "birth_date")
+    private LocalDate dateOfBirth;
 
     @Email
     @Size(min = 5, max = 254)
@@ -131,12 +143,36 @@ public class User extends AbstractAuditingEntity implements Serializable {
         this.firstName = firstName;
     }
 
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
     public String getLastName() {
         return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getJobRole() {
+        return jobRole;
+    }
+
+    public void setJobRole(String jobRole) {
+        this.jobRole = jobRole;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate datebirth) {
+        this.dateOfBirth = datebirth;
     }
 
     public String getEmail() {
@@ -234,7 +270,10 @@ public class User extends AbstractAuditingEntity implements Serializable {
         return "User{" +
             "login='" + login + '\'' +
             ", firstName='" + firstName + '\'' +
+            ", middleName='" + middleName + '\'' +
             ", lastName='" + lastName + '\'' +
+            ", jobRole='" + jobRole + '\'' +
+            ", dateOfBirth='" + dateOfBirth + '\'' +
             ", email='" + email + '\'' +
             ", imageUrl='" + imageUrl + '\'' +
             ", activated='" + activated + '\'' +
