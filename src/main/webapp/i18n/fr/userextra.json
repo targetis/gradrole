@@ -1,0 +1,27 @@
+{
+  "gradroleApp": {
+    "userextra": {
+      "home": {
+        "title": "Userextras",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Userextra",
+        "createOrEditLabel": "Créer ou éditer un Userextra",
+        "notFound": "Aucun Userextra trouvé"
+      },
+      "created": "Un nouveau Userextra a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Userextra avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Userextra avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Userextra {{ id }} ?"
+      },
+      "detail": {
+        "title": "Userextra"
+      },
+      "id": "ID",
+      "middlename": "Middlename",
+      "jobrole": "Jobrole",
+      "dob": "Dob",
+      "user": "User"
+    }
+  }
+}

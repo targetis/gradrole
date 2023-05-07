@@ -4,7 +4,7 @@
       <span class="hipster img-fluid rounded"></span>
     </div>
     <div class="col-md-9">
-      <h1 class="display-4" v-text="$t('home.title')">Welcome, Java Hipster!</h1>
+      <h1 class="display-4">Welcome, to GradRole!</h1>
       <p class="lead" v-text="$t('home.subtitle')">This is your homepage</p>
 
       <div>
@@ -14,7 +14,7 @@
 
         <div class="alert alert-warning" v-if="!authenticated">
           <span v-text="$t('global.messages.info.authenticated.prefix')">If you want to </span>
-          <a class="alert-link" v-on:click="openLogin()" v-text="$t('global.messages.info.authenticated.link')">sign in</a
+          <b-button onclick="alert-link" v-on:click="openLogin()" v-text="$t('global.messages.info.authenticated.link')">sign in</b-button
           ><span v-html="$t('global.messages.info.authenticated.suffix')"
             >, you can try the default accounts:<br />- Administrator (login="admin" and password="admin") <br />- User (login="user" and
             password="user").</span
