@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "fieldName": "middlename",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobrole",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dob",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "user",
+      "otherEntityName": "user",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "login",
+      "ownerSide": true,
+      "useJPADerivedIdentifier": true,
+      "otherEntityRelationshipName": "userextra"
+    }
+  ],
+  "service": "no",
+  "readOnly": false,
+  "pagination": "no",
+  "name": "Userextra",
+  "changelogDate": "20230506181044"
+}
